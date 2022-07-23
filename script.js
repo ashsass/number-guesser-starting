@@ -27,3 +27,18 @@ const compareGuesses = (userGuess, compGuess, targetNum) =>{
     }
     return true; 
 }
+
+//Update score based off of who guessed the targetNumber
+const updateScore = (winString) =>     {
+    if(winString === 'human'){
+        humanScore++;
+    }
+    else if(winString === 'computer'){
+        computerScore++;
+    }
+}
+
+//Update the round number of the game
+const advanceRound = () =>{
+    currentRoundNumber++;
+}
