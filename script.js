@@ -6,7 +6,7 @@ let currentRoundNumber = 1;
 
 //Generates a random number 0-9
 const generateTarget = () =>{
-    return Math.floor((Math.random() * 9) + 1);
+    return Math.floor((Math.random() * 10));
 }
 
 
@@ -42,3 +42,6 @@ const updateScore = (winString) =>     {
 const advanceRound = () =>{
     currentRoundNumber++;
 }
+
+console.log(generateTarget());
+// console.log(compareGuesses(2, 5));
