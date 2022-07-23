@@ -17,7 +17,7 @@ const generateTarget = () =>{
 const compareGuesses = (userGuess, compGuess, targetNum) =>{
     targetNum = generateTarget();
     let humanDifference = abs(targetNum - userGuess);
-    let computerDifference abs(targetNum - compGuess); //Use these two variables to determine how far off the guess is from the target and the smaller difference wins
+    let computerDifference = abs(targetNum - compGuess); //Use these two variables to determine how far off the guess is from the target and the smaller difference wins
 
     if(humanDifference === computerDifference){
         return true;
